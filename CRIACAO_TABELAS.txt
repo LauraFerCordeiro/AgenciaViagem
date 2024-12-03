@@ -1,0 +1,75 @@
+
+create database agencia;
+ 
+use agencia;
+
+create table Agente(
+cpf varchar (15),
+primary key (cpf)); 
+
+create table Cliente(
+cpf varchar(15),
+rg varchar(15),
+nome varchar(40),
+data_nasc date,
+log varchar(50),
+nro integer,
+cidade varchar(30),
+bairro varchar(30),
+pais varchar(30),
+estado varchar(30),
+primary key(cpf));
+ 
+create table Telefone (
+cpf_pessoa varchar(15),
+numero varchar(15),
+primary key(cpf_pessoa, numero),
+foreign key(cpf_pessoa) references Cliente(cpf));
+ 
+create table Email(
+cpf_pessoa varchar(15),
+email varchar(30),
+primary key(cpf_pessoa, email),
+foreign key(cpf_pessoa) references Cliente(cpf));
+ 
+create table Destino(
+codigo integer,
+pais varchar(30),
+cidade varchar(30),
+estado varchar(30),
+primary key(codigo));
+  
+create table Hospedagem(
+cod_destino integer,
+nome varchar(40),
+tipo varchar(25),
+valor float,
+classificacao varchar(20),
+log varchar(50),
+nro integer,
+cidade varchar(30),
+bairro varchar(30),
+pais varchar(30),
+estado varchar(30),
+primary key(cod_destino, nome),
+foreign key(cod_destino) references Destino(codigo));
+ 
+create table Servico(
+cod_destino integer, 
+nome_hosp varchar(40),
+servico varchar(50),
+primary key(cod_destino, nome_hosp, servico),
+foreign key(cod_destino, nome_hosp) references Hospedagem(cod_destino, nome));
+ 
+create table Viagem(
+cpf_cliente varchar(15),
+cod_destino integer,
+nome_hosp varchar(40), 
+data_ida date,
+data_volta date,
+valor float,
+cpf_agente varchar(15),
+primary key(cpf_cliente, cod_destino, nome_hosp, data_ida, data_volta),
+foreign key(cpf_cliente) references Cliente(cpf),
+foreign key(cod_destino, nome_hosp) references Hospedagem(cod_destino, nome),
+foreign key(cpf_agente) references Agente(cpf));

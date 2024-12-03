@@ -1,0 +1,93 @@
+
+insert into Agente values ("111.111.111-11");
+insert into Agente values ("222.222.222-22");
+insert into Agente values ("333.333.333-33");
+insert into Agente values ("444.444.444-44");
+insert into Agente values ("555.555.555-55");
+insert into Agente values ("666.666.666-66");
+insert into Agente values ("777.777.777-77");
+insert into Agente values ("888.888.888-88");
+insert into Agente values ("999.999.999-99");
+insert into Agente values ("455.455.455-45");
+
+
+insert into Cliente values ("123.123.123-12", "12.123.123-1", "Ana Beatriz Carol", "2000-10-20", "Rua Ana Carol", 123, "São Paulo", "Bairro Carol Beatriz", "Brasil", "São Paulo");
+insert into Cliente values ("456.456.456-45", "45.456.456-4", "Breno da Silva", "1989-02-10", "Rua Silva Breno", 456, "Rio de Janeiro", "Bairro Silva Domingos", "Brasil", "Rio de Janeiro");
+insert into Cliente values ("789.789.789-78", "78.789.789-7", "Carolina Teixeira Mendes", "2001-08-01", "Rua Carol Mendes", 789, "Belo Horizonte", "Bairro Mendes Teixeira", "Brasil", "Minas Gerais");
+insert into Cliente values ("234.234.234-23", "23.234.234-2", "Danilo Gabriel Souza", "2001-03-12", "Rua Souza Gabriel", 234, "Vitória", "Bairro Danilo Souza", "Brasil", "Espirito Santo");
+insert into Cliente values ("567.567.567-56", "56.567.567-5", "Edilene Menezes", "1980-02-05", "Rua Menezes Edilene", 567, "Salvador", "Bairro Menezes Silva", "Brasil", "Bahia");
+insert into Cliente values ("890.890.890-89", "89.890.890-8", "Fernando Da Costa Mello", "1999-10-11", "Rua Costa Mello", 890, "Natal", "Bairro Mello Costa", "Brasil", "Rio Grande do Norte");
+insert into Cliente values ("234.884.992-23", "23.532.534-5", "Victor Monteiro dos Santos", "1990-09-12", "Avenida Monteiro Neves", 423, "Macapá", "Bairro Santos Monteiro", "Brasil", "Amapá");
+insert into Cliente values ("524.342.232-23", "55.535.555-3", "Bárbara Carolina Mendes", "2000-02-20", "Rua Mendes Zitto", 2222, "Curitiba", "Bairro Zitto Mendes", "Brasil", "Paraná");
+insert into Cliente values ("900.078.087-90", "47.099.989-9", "Samanta Neves", "1995-06-06", "Rua Victoria Mello", 2323, "Salvador", "Bairro Mello Victoria", "Brasil", "Bahia");
+insert into Cliente values ("334.333.334-44", "22.555.666-7", "João Paulo Antônio", "1980-08-08", "Avenida Paulo Antônio", 375, "Fortaleza", "Bairro Antônio Paulo", "Brasil", "Ceará");
+
+insert into Telefone values ("123.123.123-12", "(17)99123-1231");
+insert into Telefone values ("456.456.456-45", "(21)99456-4564");
+insert into Telefone values ("789.789.789-78", "(30)99789-7897");
+insert into Telefone values ("234.234.234-23", "(07)99234-2342");
+insert into Telefone values ("567.567.567-56", "(90)99567-5675");
+insert into Telefone values ("890.890.890-89", "(52)99890-8908");
+insert into Telefone values ("234.884.992-23", "(23)99534-3938");
+insert into Telefone values ("524.342.232-23", "(22)99393-5233");
+insert into Telefone values ("900.078.087-90", "(43)99823-2342");
+insert into Telefone values ("334.333.334-44", "(55)99354-3538");
+
+insert into Email values ("123.123.123-12", "anabeatriz@gmail.com");
+insert into Email values ("456.456.456-45", "brenosilva@gmail.com");
+insert into Email values ("789.789.789-78", "carolmendes@gmail.com");
+insert into Email values ("234.234.234-23", "danilosouza@gmail.com");
+insert into Email values ("567.567.567-56", "edilenemenezes@gmail.com");
+insert into Email values ("890.890.890-89", "fernandocosta@gmail.com");  
+insert into Email values ("234.884.992-23", "victormonteiro@gmail.com");  
+insert into Email values ("524.342.232-23", "barbcarolina@gmail.com");  
+insert into Email values ("900.078.087-90", "samantaneves@gmail.com");  
+insert into Email values ("334.333.334-44", "antoniopaulo@gmail.com");  
+
+
+insert into Destino values (321, "Estados Unidos", "Houston", "Texas");
+insert into Destino values (546, "Estados Unidos", "Los Angeles", "Califórnia"); 
+insert into Destino values (709, "Estados Unidos", "Las Vegas", "Nevada");
+insert into Destino values (839, "Brasil", "Natal", "Rio Grande Do Norte");
+insert into Destino values (242, "Brasil", "Palmas", "Tocantins");
+insert into Destino values (932, "México", "Teapa", "Tabasco");
+insert into Destino values (231, "México", "Santiago Papasquiaro", "Durango");
+insert into Destino values (902, "Brasil", "Maceió", "Alagoas");
+insert into Destino values (745, "Brasil", "Florianópolis", "Santa Catarina");
+insert into Destino values (634, "Brasil", "Penha", "Santa Catarina");
+ 
+
+insert into Hospedagem values (321, "Hotel Milhas", "Hotel", 3009.87, "4 estrelas", "Rua Houston Milhas", 654, "Houston", null, "EUA", "Texas");
+insert into Hospedagem values (546, "Pousada Angeles", "Pousada", 978.00, "5 estrelas", "Rua Angeles", 864, "Los Angeles", null, "EUA", "Califórnia");
+insert into Hospedagem values (709, "Hotel Fênix", "Hotel", 4922.80, "5 estrelas", "Rua Fênix Vegas", 975, "Las Vegas", null, "EUA", "Nevada");
+insert into Hospedagem values (839, "Resort Natal Feliz", "Resort", 650.00, "4 estrelas", "Rua Felix Carolina", 352, "Natal", null, "Brasil", "Rio Grande Do Norte"); 
+insert into Hospedagem values (242, "Hotel parabéns", "Hotel", 570.90, "3 estrelas", "Rua Palmeiras Palmas", 463, "Palmas", null, "Brasil", "Tocantins");
+insert into Hospedagem values (932, "Pousada Mexicana", "Pousada", 842.20, "4 estrelas", "Rua Guadalupii", 554, "Teapa", null, "México", "Tabasco");
+insert into Hospedagem values (231, "Hotel caribe", "Hotel", 920.20, "5 estrelas", "Rua caribenha", 293, "Santiago Papasquiaro", null, "México", "Durango");
+insert into Hospedagem values (902, "Resort nordestino", "Resort", 1200.20, "5 estrelas", "Rua lagos maceió", 988, "Maceió", null, "Brasil", "Alagoas");
+insert into Hospedagem values (745, "Resort Ita Thermas", "Resort", 980.40, "4 estrelas", "Rua Thermas Ita", 9829, "Florianópolis", null, "Brasil", "Santa Catarina");
+insert into Hospedagem values (634, "Hotel Rochamar", "Hotel", 590.50, "3 estrelas", "Rua Rochamar Penha", 849, "Penha", null, "Brasil", "Santa Catarina");
+ 
+
+insert into Servico values (321, "Hotel Milhas", "Serviço completo");
+insert into Servico values (546, "Pousada Angeles", "Serviço completo");
+insert into Servico values (709, "Hotel Fênix", "Serviço completo");
+insert into Servico values (839, "Resort Natal Feliz", "Serviço completo");
+insert into Servico values (242, "Hotel parabéns", "Café da manhã incluso");
+insert into Servico values (932, "Pousada Mexicana", "Serviço completo");
+insert into Servico values (231, "Hotel caribe", "Serviço completo");
+insert into Servico values (902, "Resort nordestino", "Serviço completo");
+insert into Servico values (745, "Resort Ita Thermas", "Serviço completo");
+insert into Servico values (634, "Hotel Rochamar", "Café da manhã incluso");
+ 
+
+insert into Viagem values ("123.123.123-12", 321, "Hotel Milhas", "2023-07-10", "2023-07-14", 12982.50, "111.111.111-11");
+insert into Viagem values ("456.456.456-45", 546, "Pousada Angeles", "2023-10-12", "2023-10-18", 39788.00, "222.222.222-22");
+insert into Viagem values ("789.789.789-78", 709, "Hotel Fênix", "2023-08-10", "2023-08-20", 68900.00, "333.333.333-33");
+insert into Viagem values ("234.234.234-23", 839, "Resort Natal Feliz", "2023-04-14", "2023-04-21", 23340.00, "444.444.444-44");
+insert into Viagem values ("567.567.567-56", 242, "Hotel parabéns", "2023-09-13", "2023-09-20", 18900.00, "555.555.555-55");
+insert into Viagem values ("890.890.890-89", 932, "Pousada Mexicana", "2023-10-10", "2023-10-20", 20900.00, "666.666.666-66");
+insert into Viagem values ("234.884.992-23", 231, "Hotel caribe", "2023-08-10", "2023-08-16", 24000.00, "777.777.777-77");
+insert into Viagem values ("524.342.232-23", 902, "Resort nordestino", "2023-09-30", "2023-10-09", 28900.00, "888.888.888-88");
+insert into Viagem values ("900.078.087-90", 745, "Resort Ita Thermas", "2023-10-20", "2023-11-01", 23400.00, "999.999.999-99");
+insert into Viagem values ("334.333.334-44", 634, "Hotel Rochamar", "2023-09-10", "2023-09-25", 35700.00, "455.455.455-45");
